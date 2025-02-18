@@ -29,7 +29,7 @@
 
       class Todo(db.Model):
         id = db.Column(db.Integer, primary_key=True)
-        user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False) #set userid as a foreign key to user.id 
+        user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False) 
         text = db.Column(db.String(255), nullable=False)
         done = db.Column(db.Boolean, default=False)
 
